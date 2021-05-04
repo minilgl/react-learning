@@ -5,8 +5,8 @@ import {
   Grid
 } from '@material-ui/core';
 
-import CropperImage from 'src/components/croppertest//CropperImage';
-import CropperPreview from 'src/components/croppertest//CropperPreview';
+import CropperImage from 'src/components/croppertest/CropperImage';
+import CropperPreview from 'src/components/croppertest/CropperPreview';
 
 const CropperTest = () => (
   <>

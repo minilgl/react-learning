@@ -43,22 +43,13 @@ const CropperImage = (props) => {
   return (
     <Card {...props}>
       <CardHeader
-        action={(
-          <Button
-            endIcon={<ArrowDropDownIcon />}
-            size="small"
-            variant="text"
-          >
-            Last 7 days
-          </Button>
-        )}
         title="Latest Sales"
       />
       <Divider />
       <CardContent>
         <div>
           <div style={{ width: "100%" }}>
-            <input type="file" onChange={onChange} />
+            <input type="file" onChange={onChange} style={{ display:"none" }} />
             <button>Use default img</button>
             <br />
             <br />
