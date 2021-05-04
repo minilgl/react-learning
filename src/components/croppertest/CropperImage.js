@@ -11,7 +11,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Cropper from "react-cropper";
 import "cropperjs/dist/cropper.css";
-import "src/components/croppertest//CropperImage.css";
+import "src/components/croppertest/CropperImage.css";
 
 const defaultSrc = "https://raw.githubusercontent.com/roadmanfong/react-cropper/master/example/img/child.jpg";
 
@@ -82,13 +82,6 @@ const CropperImage = (props) => {
             />
           </div>
           <div>
-            <div className="box" style={{ width: "50%", float: "right" }}>
-              <h1>Preview</h1>
-              <div
-                  className="img-preview"
-                  style={{ width: "100%", float: "left", height: "300px" }}
-              />
-            </div>
             <div
                 className="box"
                 style={{ width: "50%", float: "right", height: "300px" }}

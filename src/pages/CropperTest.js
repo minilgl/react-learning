@@ -6,7 +6,7 @@ import {
 } from '@material-ui/core';
 
 import CropperImage from 'src/components/croppertest//CropperImage';
-import TrafficByDevice from 'src/components/croppertest//TrafficByDevice';
+import CropperPreview from 'src/components/croppertest//CropperPreview';
 
 const CropperTest = () => (
   <>
@@ -41,7 +41,7 @@ const CropperTest = () => (
             xl={3}
             xs={12}
           >
-            <TrafficByDevice sx={{ height: '100%' }} />
+            <CropperPreview sx={{ width: '100%' }} />
           </Grid>
         </Grid>
       </Container>
