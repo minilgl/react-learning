@@ -4,7 +4,8 @@ import {
   Container,
   Grid
 } from '@material-ui/core';
-import Sales from 'src/components/croppertest//Sales';
+
+import CropperImage from 'src/components/croppertest//CropperImage';
 import TrafficByDevice from 'src/components/croppertest//TrafficByDevice';
 
 const CropperTest = () => (
@@ -31,7 +32,7 @@ const CropperTest = () => (
             xl={9}
             xs={12}
           >
-            <Sales />
+            <CropperImage />
           </Grid>
           <Grid
             item
