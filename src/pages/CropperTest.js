@@ -5,8 +5,9 @@ import {
   Grid
 } from '@material-ui/core';
 
-import CropperImage from 'src/components/croppertest/CropperImage';
-import CropperPreview from 'src/components/croppertest/CropperPreview';
+import CropperImage from 'src/components/croppertest//CropperImage';
+import CropperPreview from 'src/components/croppertest//CropperPreview';
+import LabelingList from 'src/components/croppertest//LabelingList';
 
 const CropperTest = () => (
   <>
@@ -41,7 +42,20 @@ const CropperTest = () => (
             xl={3}
             xs={12}
           >
-            <CropperPreview sx={{ width: '100%' }} />
+              <Grid
+                  item
+                  xs={12}
+                  mb={2}
+              >
+                  <CropperPreview sx={{ width: '100%' }} />
+              </Grid>
+
+              <Grid
+                  item
+                  xs={12}
+              >
+                  <LabelingList sx={{ height: '100%' }} />
+              </Grid>
           </Grid>
         </Grid>
       </Container>
