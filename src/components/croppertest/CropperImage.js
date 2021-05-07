@@ -9,7 +9,7 @@ import Cropper from "react-cropper";
 import "cropperjs/dist/cropper.css";
 import "src/components/croppertest/CropperImage.css";
 
-const defaultSrc = "https://raw.githubusercontent.com/roadmanfong/react-cropper/master/example/img/child.jpg";
+const defaultSrc = "/static/images/sample.jpg";
 
 const CropperImage = (props) => {
   const [image, setImage] = useState(defaultSrc);
@@ -42,15 +42,14 @@ const CropperImage = (props) => {
         title="Latest Sales"
       />
       <Divider />
-      <CardContent>
+      <CardContent style={{ padding:"0px" }}>
         <div>
           <div style={{ width: "100%" }}>
             <input type="file" onChange={onChange} style={{ display:"none" }} />
-            <button>Use default img</button>
-            <br />
+            <button style={{ display:"none" }}>Use default img</button>
             <br />
             <Cropper
-                style={{ height: 400, width: "100%" }}
+                style={{ height: "100%", width: "100%" }}
                 zoomTo={0}
                 initialAspectRatio={1}
                 preview=".img-preview"
@@ -68,7 +67,7 @@ const CropperImage = (props) => {
                 }}
             />
           </div>
-          <div>
+          <div style={{display : "none"}}>
             <div
                 className="box"
                 style={{ width: "50%", float: "right", height: "300px" }}
