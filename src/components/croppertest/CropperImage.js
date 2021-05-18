@@ -39,7 +39,7 @@ const CropperImage = (props) => {
   return (
     <Card {...props}>
       <CardHeader
-        title="Latest Sales"
+        title="Labeling"
       />
       <Divider />
       <CardContent style={{ padding:"0px" }}>
